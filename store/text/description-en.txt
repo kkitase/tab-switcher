@@ -9,7 +9,7 @@ Switch Chrome tabs the same way you switch windows with Alt+Tab.
 ■ Features
 ・Tabs from all open windows are listed. Choosing a tab in another window brings that window to the front.
 ・The list appears in the center of the current page. On pages where extensions cannot run, such as chrome:// pages, a small window opens in the center instead.
-・You can change the shortcut at chrome://extensions/shortcuts.
+・Click the toolbar icon to check your current shortcut and how to use it. You can change the shortcut at chrome://extensions/shortcuts.
 ・Supports both light and dark mode.
 
 ■ Privacy

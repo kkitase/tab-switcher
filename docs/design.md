@@ -52,7 +52,8 @@ chrome-alt-tab/
 - 権限: `tabs`（タイトルと URL の取得）、`storage`（使った順の記録）、`scripting` と `activeTab`（ショートカット操作時に表示中のページへ差し込む）、`favicon`（`chrome-extension://<id>/_favicon/` でファビコンを取得）
 - 全サイトへのアクセス権限（host permissions）は付けない。ショートカット操作で `activeTab` の権限が得られるため
 - `web_accessible_resources` には `switcher.html` だけを登録する（CSS と JS は拡張機能のページから読むので登録不要）
-- `action.default_popup` は設定しない。ページに差し込めないときは、ツールバーのポップアップではなく専用ウィンドウを使う（下の background.js を参照）
+- `action.default_popup` は `popup.html`。ツールバーのアイコンを押すと、いま割り当てられているショートカット（`chrome.commands.getAll()`）、使い方、`chrome://extensions/shortcuts` を開くボタンを出す。ほかの拡張機能と重なってショートカットが空のときは「未設定」と出し、Option を使う組み合わせを設定するよう案内する（Option の離しで切り替える作りのため）
+- 一覧はツールバーのポップアップには出さない。ページに差し込めないときは専用ウィンドウを使う（下の background.js を参照）
 
 ### background.js
 

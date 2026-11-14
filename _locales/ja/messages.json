@@ -18,5 +18,25 @@
   "emptyList": {
     "message": "タブがありません",
     "description": "一覧にタブが 1 つもないときの表示"
+  },
+  "popupShortcutLabel": {
+    "message": "ショートカット",
+    "description": "ポップアップのショートカット欄の見出し"
+  },
+  "popupNotSet": {
+    "message": "未設定",
+    "description": "ショートカットが割り当てられていないときの表示"
+  },
+  "popupNotSetHelp": {
+    "message": "ほかの拡張機能が ⌥Q を使っている可能性があります。Option（Windows では Alt）を使う組み合わせを設定してください。",
+    "description": "ショートカットが未設定のときの案内"
+  },
+  "popupUsage": {
+    "message": "ショートカットを押すと、最近使った順にタブの一覧が出ます。Option（Windows では Alt）を押したまま同じキーを押すと次へ進み、Option を離すとそのタブに切り替わります。",
+    "description": "ポップアップの使い方の説明"
+  },
+  "popupChangeShortcut": {
+    "message": "ショートカットを変更",
+    "description": "chrome://extensions/shortcuts を開くボタン"
   }
 }

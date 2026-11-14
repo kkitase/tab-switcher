@@ -1,0 +1,99 @@
+/* 色の値は DESIGN.md（Google Cloud Japan）のトークン。switcher.css とそろえる */
+:root {
+  --surface: #ffffff; /* neutral */
+  --outline: #dadce0; /* grey-300 */
+  --text: #202124; /* grey-900 */
+  --text-sub: #5f6368; /* grey-700 */
+  --kbd-bg: #f1f3f4; /* grey-100 */
+  --primary: #1a73e8; /* primary */
+  --primary-hover: #1967d2; /* primary-hover */
+  --on-primary: #ffffff;
+  --error: #d93025; /* red-600 */
+  font-family: "Google Sans", "Noto Sans JP", system-ui, sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #202124; /* grey-900 */
+    --outline: #3c4043; /* grey-800 */
+    --text: #f1f3f4; /* grey-100 */
+    --text-sub: #9aa0a6; /* grey-500 */
+    --kbd-bg: #3c4043; /* grey-800 */
+    --primary: #8ab4f8; /* blue-300 */
+    --primary-hover: #aecbfa; /* blue-200 */
+    --on-primary: #202124;
+    --error: #f28b82; /* red-300 */
+  }
+}
+
+body {
+  width: 300px;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 1px solid var(--outline);
+  border-bottom: 1px solid var(--outline);
+}
+
+kbd {
+  font: inherit;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--kbd-bg);
+}
+
+kbd.not-set {
+  color: var(--error);
+}
+
+p {
+  margin: 12px 0 0;
+  color: var(--text-sub);
+}
+
+p.warning {
+  color: var(--error);
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 500;
+  color: var(--on-primary);
+  background: var(--primary);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}

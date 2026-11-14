@@ -20,14 +20,20 @@ test("manifest で使うメッセージが、すべての言語で定義され�
   }
 });
 
-test("一覧の画面で使うメッセージが、すべての言語で定義されている", () => {
-  const source = load("../switcher.js");
-  const keys = [...source.matchAll(/getMessage\("(\w+)"\)/g)].map((m) => m[1]);
-  assert.ok(keys.length > 0);
-  for (const key of keys) {
-    assert.ok(en[key]?.message, `en に ${key} がない`);
-    assert.ok(ja[key]?.message, `ja に ${key} がない`);
-  }
+for (const file of ["switcher.js", "popup.js"]) {
+  test(`${file} で使うメッセージが、すべての言語で定義されている`, () => {
+    const source = load(`../${file}`);
+    const keys = [...source.matchAll(/(?:getMessage|\bt)\("(\w+)"\)/g)].map((m) => m[1]);
+    assert.ok(keys.length > 0);
+    for (const key of keys) {
+      assert.ok(en[key]?.message, `en に ${key} がない`);
+      assert.ok(ja[key]?.message, `ja に ${key} がない`);
+    }
+  });
+}
+
+test("manifest のポップアップに popup.html を指定している", () => {
+  assert.equal(manifest.action.default_popup, "popup.html");
 });
 
 test("既定の言語が英語で、概要がストアの上限（132 文字）に収まる", () => {

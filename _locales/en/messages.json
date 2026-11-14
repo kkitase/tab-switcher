@@ -18,5 +18,25 @@
   "emptyList": {
     "message": "No tabs",
     "description": "一覧にタブが 1 つもないときの表示"
+  },
+  "popupShortcutLabel": {
+    "message": "Shortcut",
+    "description": "ポップアップのショートカット欄の見出し"
+  },
+  "popupNotSet": {
+    "message": "Not set",
+    "description": "ショートカットが割り当てられていないときの表示"
+  },
+  "popupNotSetHelp": {
+    "message": "Another extension may already be using ⌥Q. Set a shortcut that uses Option (Alt on Windows).",
+    "description": "ショートカットが未設定のときの案内"
+  },
+  "popupUsage": {
+    "message": "Press the shortcut to see your tabs in most-recently-used order. Keep holding Option (Alt on Windows) and press the same key to move to the next tab, then release Option to switch.",
+    "description": "ポップアップの使い方の説明"
+  },
+  "popupChangeShortcut": {
+    "message": "Change shortcut",
+    "description": "chrome://extensions/shortcuts を開くボタン"
   }
 }

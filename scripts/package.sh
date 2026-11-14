@@ -14,6 +14,7 @@ zip -q -r -X "$out" \
   manifest.json background.js content.js \
   _locales/en/messages.json _locales/ja/messages.json \
   switcher.html switcher.css switcher.js \
+  popup.html popup.css popup.js \
   lib/order.js lib/page.js \
   icons/icon-16.png icons/icon-32.png icons/icon-48.png icons/icon-128.png
 
