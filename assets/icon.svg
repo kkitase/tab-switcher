@@ -1,0 +1,7 @@
+<!-- 拡張機能アイコンの元データ。一覧の 2 行目（直前のタブ）が選ばれた状態を表す。色は DESIGN.md の primary（#1A73E8） -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <rect width="96" height="96" rx="22" fill="#1A73E8"/>
+  <rect x="18" y="20" width="60" height="14" rx="5" fill="#FFFFFF" fill-opacity="0.45"/>
+  <rect x="14" y="40" width="68" height="16" rx="6" fill="#FFFFFF"/>
+  <rect x="18" y="62" width="60" height="14" rx="5" fill="#FFFFFF" fill-opacity="0.45"/>
+</svg>

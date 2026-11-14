@@ -1,0 +1,8 @@
+No account or setup is required.
+
+1. Open several tabs in one or more Chrome windows (for example, https://example.com and https://www.wikipedia.org).
+2. On a regular web page, press Alt+Q (Option+Q on macOS). A list of tabs in most-recently-used order appears in the center of the page, with the previous tab selected.
+3. Keep holding Alt (Option) and press Q again to move the selection. Release Alt (Option) to switch to the selected tab.
+4. On pages where extensions cannot run scripts (for example, chrome://extensions), the same list opens in a small window in the center of the current window.
+
+If the shortcut is not assigned because of a conflict, set it at chrome://extensions/shortcuts.
