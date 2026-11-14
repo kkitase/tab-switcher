@@ -2,7 +2,9 @@
 
 macOS の Alt+Tab 系のウィンドウ切り替えツールと同じ感覚で、Chrome のタブを切り替える拡張機能です。最近使った順に並んだ一覧を画面の中央に出し、キーボードだけで前のタブに戻れます。
 
-![Option+Q キーで最近使った順のタブ一覧を出し、Option キーを離して別のタブに切り替える様子](tab-switcher.gif)
+![Option+Q キーで最近使った順のタブ一覧を出し、Option キーを押したまま Q キーで次へ進み、離して別のタブに切り替える様子](assets/demo-ja.gif)
+
+英語版の GIF は [assets/demo-en.gif](assets/demo-en.gif) にあります。
 
 ## できること
 
