@@ -59,11 +59,17 @@ macOS の Alt+Tab 系のウィンドウ切り替えツールと同じ感覚で�
 | スクリーンショット | 1280×800 | 1 枚以上 | 下の「スクリーンショットの候補」を参照 |
 | プロモーション タイル（小） | 440×280 | 任意 | `store/promo-small.png`。ないと検索結果で後ろに回される |
 
-アップロードするスクリーンショットは `store/screenshot-1.png` と `store/screenshot-2.png`（1280×800）です。撮り直すときは、`scripts/store-screenshot.sh` で 1280×800 にそろえます。候補は次の 3 つです。
+アップロードするスクリーンショットは、英語版が `store/en/`、日本語版が `store/ja/` にある 5 枚ずつ（1280×800）です。言語ごとに画像を登録できない場合は、全言語向けに英語版を使います。
 
-- `Option+Q` で、ページの中央に一覧が出ている画面
-- 別のウィンドウのタブも並んでいる画面（ウィンドウを 2 つ開いた状態）
-- ダークモードで一覧を出した画面
+| # | 見出し（英語 / 日本語） | 図 |
+|---|---|---|
+| 1 | Alt+Tab for your Chrome tabs / Chrome のタブを Alt+Tab の感覚で | 一覧が出た画面 |
+| 2 | Hold Option and press Q to move / Option を押したまま Q で次へ | 選択が下に移った画面 |
+| 3 | Release Option to switch / Option を離すと切り替わる | 切り替わったあとの画面 |
+| 4 | Tabs from every window / すべてのウィンドウのタブが並ぶ | 2 つのウィンドウのタブが並ぶ一覧 |
+| 5 | Check your shortcut anytime / ショートカットはアイコンで確認 | ツールバーのポップアップ |
+
+図は実際の画面を模したイラストで、タブ名などの文字は灰色の線で表しています。実際の画面を撮ってストアのサイズにそろえるときは、`scripts/store-screenshot.sh` を使います。
 
 ## プライバシーへの取り組み（Privacy practices）
 
