@@ -1,0 +1,22 @@
+{
+  "extName": {
+    "message": "Tab Switcher",
+    "description": "拡張機能の名前"
+  },
+  "extDescription": {
+    "message": "Option+Q で、Chrome のタブを最近使った順の一覧から切り替える",
+    "description": "ストアと拡張機能の一覧に出る概要（132 文字以内）"
+  },
+  "commandSwitch": {
+    "message": "最近使った順にタブを切り替える",
+    "description": "chrome://extensions/shortcuts に出るショートカットの説明"
+  },
+  "switcherLabel": {
+    "message": "タブの切り替え",
+    "description": "一覧のパネルの読み上げ用の名前"
+  },
+  "emptyList": {
+    "message": "タブがありません",
+    "description": "一覧にタブが 1 つもないときの表示"
+  }
+}

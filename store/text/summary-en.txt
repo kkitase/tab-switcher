@@ -1,0 +1,1 @@
+Switch Chrome tabs from a most-recently-used list with Option+Q (Alt+Q on Windows), just like Alt+Tab.

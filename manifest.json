@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Tab Switcher",
-  "version": "1.0.0",
-  "description": "Option+Q で、Chrome のタブを最近使った順の一覧から切り替える",
+  "name": "__MSG_extName__",
+  "version": "1.0.1",
+  "default_locale": "en",
+  "description": "__MSG_extDescription__",
   "permissions": ["tabs", "storage", "scripting", "activeTab", "favicon"],
   "background": {
     "service_worker": "background.js",
@@ -15,7 +16,7 @@
     "128": "icons/icon-128.png"
   },
   "action": {
-    "default_title": "Tab Switcher",
+    "default_title": "__MSG_extName__",
     "default_icon": {
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"
@@ -24,7 +25,7 @@
   "commands": {
     "switch": {
       "suggested_key": { "default": "Alt+Q", "mac": "Alt+Q" },
-      "description": "最近使った順にタブを切り替える"
+      "description": "__MSG_commandSwitch__"
     }
   },
   "web_accessible_resources": [

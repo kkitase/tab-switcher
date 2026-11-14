@@ -12,7 +12,7 @@ Chrome ウェブストアのデベロッパー ダッシュボードに入力す
 
 ## ストアの掲載情報（Store listing）
 
-名前と概要は `manifest.json` の `name` と `description` がそのまま使われます。ダッシュボードで入力するのは、詳細な説明、カテゴリ、言語、画像です。
+名前と概要は `_locales/<言語>/messages.json` の `extName` と `extDescription` が使われます。1.0.1 から英語（既定）と日本語に対応しているので、ダッシュボードでは言語ごとに詳細な説明を入力します。英語の説明文は `store/text/description-en.txt`、日本語は `store/text/description.txt` です。カテゴリと画像は言語に関係なく共通です。
 
 **名前**
 
@@ -49,7 +49,7 @@ macOS の Alt+Tab 系のウィンドウ切り替えツールと同じ感覚で�
 
 **カテゴリ**: 仕事効率化（Productivity）の中の「ツール」
 
-**言語**: 日本語
+**言語**: 英語（既定）と日本語
 
 **画像**
 

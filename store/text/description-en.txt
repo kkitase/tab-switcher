@@ -1,0 +1,16 @@
+Switch Chrome tabs the same way you switch windows with Alt+Tab.
+
+■ How to use
+・Press Option+Q (Alt+Q on Windows) to show your tabs in most-recently-used order, with the previous tab selected.
+・Keep holding Option and press Q again to move to the next tab. Release Option to switch to the selected tab.
+・A quick single press takes you straight back to the previous tab, so you can go back and forth between two tabs.
+・You can also click a row to switch. Press Esc or click outside the list to close it without switching.
+
+■ Features
+・Tabs from all open windows are listed. Choosing a tab in another window brings that window to the front.
+・The list appears in the center of the current page. On pages where extensions cannot run, such as chrome:// pages, a small window opens in the center instead.
+・You can change the shortcut at chrome://extensions/shortcuts.
+・Supports both light and dark mode.
+
+■ Privacy
+Tab titles and URLs are used only inside your browser to show the list. Nothing is sent to any external server.

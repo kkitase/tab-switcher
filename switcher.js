@@ -44,6 +44,9 @@ port.onMessage.addListener((message) => {
 port.onDisconnect.addListener(close);
 
 document.body.classList.toggle("window", isWindow);
+// 文言はブラウザの言語に合わせる（_locales/<言語>/messages.json）
+document.documentElement.lang = chrome.i18n.getUILanguage();
+document.getElementById("panel").setAttribute("aria-label", chrome.i18n.getMessage("switcherLabel"));
 
 function faviconUrl(pageUrl) {
   const url = new URL(chrome.runtime.getURL("/_favicon/"));
@@ -65,7 +68,7 @@ function render() {
   if (tabs.length === 0) {
     const empty = document.createElement("li");
     empty.className = "empty";
-    empty.textContent = "タブがありません";
+    empty.textContent = chrome.i18n.getMessage("emptyList");
     listEl.append(empty);
     return;
   }

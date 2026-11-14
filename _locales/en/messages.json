@@ -1,0 +1,22 @@
+{
+  "extName": {
+    "message": "Tab Switcher",
+    "description": "拡張機能の名前"
+  },
+  "extDescription": {
+    "message": "Switch Chrome tabs from a most-recently-used list with Option+Q (Alt+Q on Windows), just like Alt+Tab.",
+    "description": "ストアと拡張機能の一覧に出る概要（132 文字以内）"
+  },
+  "commandSwitch": {
+    "message": "Switch tabs in most-recently-used order",
+    "description": "chrome://extensions/shortcuts に出るショートカットの説明"
+  },
+  "switcherLabel": {
+    "message": "Switch tabs",
+    "description": "一覧のパネルの読み上げ用の名前"
+  },
+  "emptyList": {
+    "message": "No tabs",
+    "description": "一覧にタブが 1 つもないときの表示"
+  }
+}
