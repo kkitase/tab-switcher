@@ -74,7 +74,7 @@ Chrome 拡張機能として動くので、次の制約があります。
 | `test/` | `lib/` と言語ファイルの単体テスト |
 | `docs/design.md` | 設計書 |
 | `docs/store-listing.md` | Chrome ウェブストアの掲載情報の下書き |
-| `store/` | Chrome ウェブストアに載せるスクリーンショットと文章 |
+| `docs/store/` | Chrome ウェブストアに載せるスクリーンショットと文章 |
 
 ## テスト
 

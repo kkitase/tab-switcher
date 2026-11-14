@@ -74,7 +74,7 @@ No build step is needed. The extension is written in plain JavaScript.
 | `test/` | Unit tests for `lib/` and the language files |
 | `docs/design.md` | Design document (Japanese) |
 | `docs/store-listing.md` | Draft of the Chrome Web Store listing (Japanese) |
-| `store/` | Screenshots and text for the Chrome Web Store |
+| `docs/store/` | Screenshots and text for the Chrome Web Store |
 
 ## Tests
 
