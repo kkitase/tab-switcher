@@ -1,85 +1,87 @@
 # Tab Switcher
 
-macOS の Alt+Tab 系のウィンドウ切り替えツールと同じ感覚で、Chrome のタブを切り替える拡張機能です。最近使った順に並んだ一覧を画面の中央に出し、キーボードだけで前のタブに戻れます。
+English | [日本語](README.ja.md)
 
-![Option+Q キーで最近使った順のタブ一覧を出し、Option キーを押したまま Q キーで次へ進み、離して別のタブに切り替える様子](assets/demo-ja.gif)
+A Chrome extension that lets you switch tabs the same way you switch windows with Alt+Tab. It shows your tabs in most-recently-used order in the center of the screen, so you can jump back to a previous tab using only the keyboard.
 
-英語版の GIF は [assets/demo-en.gif](assets/demo-en.gif) にあります。
+![Press Option+Q to show your tabs in most-recently-used order, keep holding Option and press Q to move to the next tab, then release Option to switch](assets/demo-en.gif)
 
-## できること
+## Features
 
-同じ Chrome プロファイルで開いている、すべてのウィンドウのタブを一覧にします。操作は `Option+Q` キーだけです。
+Tab Switcher lists the tabs in every window of the same Chrome profile. The only shortcut you need is `Option+Q` (`Alt+Q` on Windows).
 
-- `Option+Q` キーを押すと、最近使った順に一覧が出て、直前のタブが選ばれた状態になります。
-- Option キーを押したまま Q キーを押すたびに、次のタブへ移ります。最後まで進むと先頭に戻ります。
-- Option キーを離すと、選んでいるタブに切り替わります。
+- Press `Option+Q` to show the list in most-recently-used order, with the previous tab selected.
+- Keep holding Option and press Q again to move to the next tab. After the last tab, the selection wraps around to the first one.
+- Release Option to switch to the selected tab.
 
-`Option+Q` キーを 1 回だけすばやく押すと、直前のタブに戻ります。もう一度押せば元のタブに戻るので、2 つのタブを行き来するときに便利ですよ。
+A quick single press of `Option+Q` takes you straight back to the previous tab. Press it again to return, which makes it easy to go back and forth between two tabs.
 
-ツールバーの Tab Switcher のアイコンを押すと、いま割り当てられているショートカットと使い方を確認できます。ショートカットがほかの拡張機能と重なって未設定になっている場合も、ここでわかります。
+Click the Tab Switcher icon in the toolbar to check the shortcut that is currently assigned and how to use it. If the shortcut was left unassigned because another extension already uses it, you can see that here too.
 
-行をクリックしても切り替わります。Esc キーか一覧の外側のクリックで、何もせずに閉じます。Option キーを離しても一覧が閉じないときは、Enter キーを押すと選んでいるタブに切り替わります。
+You can also click a row to switch. Press Esc or click outside the list to close it without switching. If the list stays open after you release Option, press Enter to switch to the selected tab.
 
-## 対応している言語
+## Languages
 
-英語と日本語に対応しています。ショートカットの説明や一覧の文言は、Chrome の表示言語に合わせて切り替わります。どちらでもない言語のときは英語で表示します。
+Tab Switcher supports English and Japanese. The shortcut description and the text in the list follow Chrome's display language. For any other language, English is used.
 
-## インストール
+## Installation
 
-Chrome ウェブストアには公開していないので、フォルダを直接読み込みます。
+Tab Switcher is not yet available on the Chrome Web Store, so load the folder directly.
 
-1. Chrome で `chrome://extensions` を開き、右上の「デベロッパー モード」をオンにします。
-2. 「パッケージ化されていない拡張機能を読み込む」をクリックし、このリポジトリのフォルダを選びます。
-3. `chrome://extensions/shortcuts` を開き、Tab Switcher のショートカットが `⌥Q` になっているかを確かめます。ほかの拡張機能と重なっている場合は空欄になるので、手動で設定してください。
+1. Open `chrome://extensions` in Chrome and turn on Developer mode in the top-right corner.
+2. Click Load unpacked and select the folder of this repository.
+3. Open `chrome://extensions/shortcuts` and check that the Tab Switcher shortcut is set to `⌥Q`. If another extension already uses it, the field is left empty, so set it manually.
 
-別の Chrome プロファイルでも使う場合は、プロファイルごとに同じ手順で読み込みます。
+To use Tab Switcher in another Chrome profile, load it in each profile the same way.
 
-## ショートカットの変更
+## Changing the shortcut
 
-キーは `chrome://extensions/shortcuts` でいつでも変えられます。拡張機能のショートカットに使えるのは A〜Z、0〜9、カンマ、ピリオド、Space、矢印キーなどで、Tab キーは割り当てられません。
+You can change the key at any time at `chrome://extensions/shortcuts`. Extension shortcuts can use A–Z, 0–9, Comma, Period, Space, the arrow keys, and a few others. The Tab key cannot be assigned.
 
-`Option+Q` キーを割り当てている間は、Chrome の中でこのキーで特殊文字（`œ`）を入力できなくなります。また、ほかのアプリやツールが Mac 全体で `Option+Q` キーを使っていると、そちらが優先されて一覧が出ません。
+Keep Option (Alt on Windows) in the new shortcut. Tab Switcher switches tabs when you release Option, so a shortcut without Option will not switch.
 
-## 制約
+While `Option+Q` is assigned, you cannot type the special character it produces (`œ`) in Chrome. If another app or tool uses `Option+Q` system-wide on your Mac, that app takes priority and the list does not appear.
 
-Chrome 拡張機能として動くので、次の制約があります。
+## Limitations
 
-- Chrome が前面にあるときだけ使えます。ほかのアプリからは呼び出せません。
-- 一覧に出るのは、拡張機能を入れたプロファイルのタブだけです。
-- 新しいタブ、`chrome://` で始まるページ、Chrome ウェブストア、管理ポリシーで拡張機能の操作が禁止されたサイトでは、ページに一覧を重ねられません。その場合は、ウィンドウの中央に一覧だけの小さなウィンドウを開きます。操作は同じですが、開くまでに一瞬かかります。
+Because Tab Switcher runs as a Chrome extension, it has the following limitations.
 
-## プライバシー
+- It works only while Chrome is in front. You cannot call it from other apps.
+- The list shows only the tabs of the profile where the extension is installed.
+- On the New Tab page, pages that start with `chrome://`, the Chrome Web Store, and sites where a management policy blocks extensions, the list cannot be shown on top of the page. In that case, a small window with the list opens in the center of the current window. It works the same way, but takes a moment to open.
 
-タブのタイトルと URL は、一覧を表示するためにブラウザの中でだけ使います。使った順の記録は `chrome.storage.session` に置き、ブラウザを閉じると消えます。外部のサーバーには一切送信しません。詳しくは [プライバシー ポリシー](PRIVACY.md) をご覧ください。
+## Privacy
 
-## ファイル構成
+Tab titles and URLs are used only inside your browser to show the list. The record of recently used tabs is kept in `chrome.storage.session` and is cleared when you close the browser. Nothing is sent to any external server. For details, see the [privacy policy](PRIVACY.md).
 
-ビルドは不要で、素の JavaScript だけで書いています。
+## Project structure
 
-| ファイル | 役割 |
+No build step is needed. The extension is written in plain JavaScript.
+
+| File | Role |
 |---|---|
-| `manifest.json` | 権限とショートカットの定義 |
-| `_locales/` | 英語と日本語の文言 |
-| `background.js` | タブを使った順の記録、ショートカットの受け取り、タブの切り替え |
-| `content.js` | 表示中のページに一覧を重ねる |
-| `popup.html` / `popup.css` / `popup.js` | ツールバーのアイコンを押したときの説明（ショートカットと使い方） |
-| `switcher.html` / `switcher.css` / `switcher.js` | 一覧の画面（ページへの重ね表示と専用ウィンドウで共用） |
-| `lib/order.js` | タブを最近使った順に並べる |
-| `lib/page.js` | ページに一覧を差し込めるかを URL から判定する |
-| `icons/` | 拡張機能アイコン（元データは `assets/icon.svg`） |
-| `scripts/package.sh` | Chrome ウェブストアにアップロードする ZIP を `dist/` に作る |
-| `scripts/store-screenshot.sh` | スクリーンショットをストアのサイズ（1280×800）にそろえる |
-| `test/` | `lib/` の単体テスト |
-| `docs/design.md` | 設計書 |
-| `docs/store-listing.md` | Chrome ウェブストアの掲載情報の下書き |
-| `store/` | Chrome ウェブストアに載せるスクリーンショット（1280×800） |
+| `manifest.json` | Permissions and shortcut definition |
+| `_locales/` | English and Japanese text |
+| `background.js` | Records recently used tabs, receives the shortcut, and switches tabs |
+| `content.js` | Shows the list on top of the current page |
+| `popup.html` / `popup.css` / `popup.js` | Toolbar popup that shows the current shortcut and how to use it |
+| `switcher.html` / `switcher.css` / `switcher.js` | The tab list (shared by the page overlay and the small window) |
+| `lib/order.js` | Sorts tabs in most-recently-used order |
+| `lib/page.js` | Decides from the URL whether the list can be shown on the page |
+| `icons/` | Extension icons (source: `assets/icon.svg`) |
+| `scripts/package.sh` | Creates the ZIP for the Chrome Web Store in `dist/` |
+| `scripts/store-screenshot.sh` | Resizes screenshots to the Chrome Web Store size (1280×800) |
+| `test/` | Unit tests for `lib/` and the language files |
+| `docs/design.md` | Design document (Japanese) |
+| `docs/store-listing.md` | Draft of the Chrome Web Store listing (Japanese) |
+| `store/` | Screenshots and text for the Chrome Web Store |
 
-## テスト
+## Tests
 
-`lib/` の関数は Node.js 20 以上で単体テストできます。依存パッケージはないので、インストールは不要です。
+The functions in `lib/` can be tested with Node.js 20 or later. There are no dependencies to install.
 
 ```bash
 node --test
 ```
 
-キー操作や表示は Chrome で実際に確かめます。確認項目は設計書（`docs/design.md`）の「テスト」にまとめています。
+Keyboard behavior and the display are checked manually in Chrome. The checklist is in the Tests section of the design document (`docs/design.md`).
